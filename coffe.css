@@ -1,0 +1,63 @@
+body{
+    background-color: rgba(195, 171, 122, 1);
+}
+.contenedor{
+
+}
+.venta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    grid-auto-rows: 150px;
+    padding: 10px;
+}
+
+.bolsa {
+    background-color: antiquewhite;
+    color: rgb(236, 175, 96);
+    text-align: center;
+    padding: 10px;
+    filter: grayscale(100%);
+}
+
+.bolsa img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.uno {
+    grid-column: 2/3;
+    grid-row: 1/span 3;
+}
+
+.dos {
+    grid-row: span 3;
+}
+
+.tres {
+    grid-column: 3;
+    grid-row: span 3;
+}
+
+.cuatro {
+    grid-column: 4;
+    grid-row: span 3;
+}
+
+.cinco {
+    grid-column: 1;
+    grid-row: span 2;
+}
+
+.seis {
+    grid-column: 2;
+    grid-row: span 2;
+}
+
+.seis:hover {
+    transform: scale(1.05);
+    transition: 0.8s;
+    filter: grayscale(0%);
+    cursor: pointer;
+}
